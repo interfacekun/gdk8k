@@ -1296,22 +1296,22 @@ endif
 ifneq "$(KERNELVERSION)" "4.19.161"
 include/config/auto.conf: FORCE
 endif
-ifneq "$(CC_VERSION_TEXT)" "aarch64-linux-gnu-gcc (Ubuntu 12.3.0-1ubuntu1~23.04) 12.3.0"
+ifneq "$(CC_VERSION_TEXT)" "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
 include/config/auto.conf: FORCE
 endif
 ifneq "$(srctree)" "."
 include/config/auto.conf: FORCE
 endif
-ifneq "$(CC)" "./scripts/gcc-wrapper.py aarch64-linux-gnu-gcc"
+ifneq "$(CC)" "./scripts/gcc-wrapper.py gcc"
 include/config/auto.conf: FORCE
 endif
-ifneq "$(LD)" "aarch64-linux-gnu-ld"
+ifneq "$(LD)" "ld"
 include/config/auto.conf: FORCE
 endif
-ifneq "$(NM)" "aarch64-linux-gnu-nm"
+ifneq "$(NM)" "nm"
 include/config/auto.conf: FORCE
 endif
-ifneq "$(OBJCOPY)" "aarch64-linux-gnu-objcopy"
+ifneq "$(OBJCOPY)" "objcopy"
 include/config/auto.conf: FORCE
 endif
 ifneq "$(SRCARCH)" "arm64"
